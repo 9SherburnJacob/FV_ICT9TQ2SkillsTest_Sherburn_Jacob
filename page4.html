@@ -17,6 +17,12 @@
         height: 100px;
         width: 100px;
        }
+       #stu{
+        color:rgb(41, 60, 143) 
+       }
+       #btngood{
+        color:rgb(37, 74, 238);
+       }
     </style>
 </head>
 <body>
@@ -42,7 +48,7 @@
           <a class="nav-link" href="page4.html">Enroll</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="page5.html">Contact Us</a>
+          <a class="nav-link" href="page5.html">Office Hours</a>
         </li>
       </ul>
 
@@ -55,10 +61,11 @@
 </nav>
 
 <br><br>
-
-<div class="container bg-light text-center bg">
+<div class="container text-center text-light">
   <br>
+  <div id="stu">
     <p class="fw-bold display-2">Enrollment</p>
+    </div>
     <br>
     <blockquote>
         <span class=""></span> 
@@ -66,7 +73,7 @@
 </div>
 
 <br><br>
-
+<div id="formbox">
 <div class="container bg-light">
 
 <br>
@@ -103,46 +110,40 @@
   </div>
   <br>
 
-
-
-	<br></br>
-
-	<label for="skill">What are you good at?</label>
-
 	<br>
 
-	<input type="checkbox" id="coding" name="coding">
-	<label for="coding">Coding</label>
+  <h2>Contact Details</h2>
 
-	<input type="checkbox" id="design" name="design">
-	<label for="design">Design</label>
+  <label for="email">Email Address</label>
+	<br>
+	<input class="form-control" type="text" id="email" name="email" placeholder="Johndoe@gmail.com" required>
 
-	<input type="checkbox" id="electronics" name="electronics">
-	<label for="electronics">Electronics</label>
+  <br>
+
+  <label for="number">Contact Number</label>
+	<br>
+	<input class="form-control" type="text" id="number" name="number" placeholder="1337-011-6789" required>
+
+  <br>
+
+  <h2>Other Information</h2>
+  <br>
+
+  <label for="check">Method of learning</label>
+  <br>
+  <input class="form-check-input" type="checkbox" id="check" name="check">
+	<label for="check">Online</label>
+  <br>
+  <input class="form-check-input" type="checkbox" id="check2" name="check2">
+	<label for="check2">Face to face</label>
 
 	<br><br>
 
-	<label for="application_reasons">Application Reasons</label>
-
-	<br><br>
-
-	<textarea id="application_reasons" name="application_reasons" rows="4" cols="80" placeholder="..."></textarea>
-
-	<br></br>
-
-	<h2>Robotics Club's Top Activities:</h2>
-
-	<ul>
-		<li>Mechanical Engineering</li>
-		<li>Robot Behavior Programming</li>
-		<li>Robot Emotional Response Testing</li>
-		<li>Scraping Teams</li>
-  </ul>
-	<br></br>
-
-	<button type="submit" id="submit" name="submit">
+  <div id="btngood">
+	<button type="submit" id="submit" name="submit" class="btn btn-xxx">
 	Submit
+  </div>
 	</button>
-
+  </div>
 </body>
 </html>
